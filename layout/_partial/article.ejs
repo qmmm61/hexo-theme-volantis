@@ -163,7 +163,7 @@
     <% } %>
   <% } %>
 
-  <% if (post.prev || post.next) { %>
+  <% if ((post.prev || post.next) && theme.article.body.postnav) { %>
     <div class="prev-next">
       <% if (post.prev) { %>
         <a class='prev' href='<%- url_for(post.prev.path) %>'>
